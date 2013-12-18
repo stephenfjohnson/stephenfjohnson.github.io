@@ -1,7 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-  </body>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Perspective Page View Navigation</title>
+		<meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
+		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
+		<script src="js/modernizr.custom.25376.js"></script>
+	</head>
+	<body>
+		<div id="perspective" class="perspective effect-movedown">
+			<div class="container">
+				<div class="wrapper"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+					
+					<header class="codrops-header">
+						<h1>Stephen F Johnson <span>Web Designer at My Custom Event and CTO at NorthWest Tech Experience</span></h1>	
+					</header>
+					<div class="main clearfix">
+						<div class="column">
+							<p>Web Dev, Apple Fanboy and UI Designer. I work at My Custom Event building quality custom websites. I love CSS, jQuery and Ruby.</p>
+                            <p><button id="showMenu">Find Me Around The Web</button></p>
+						</div>
+						<div class="column">
+							<img src="img/profile-small.png" alt="profile">
+						</div>
+					</div><!-- /main -->
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav top horizontal">
+				<a href="#" class="icon-news">Blog</a>
+				<a href="#" class="icon-news">Facebook</a>
+				<a href="#" class="icon-image">Instagram</a>
+				<a href="#" class="icon-upload">Reddit</a>
+				<a href="#" class="icon-mail">Email</a>
+				<a href="#" class="icon-mail">Youtube</a>
+				<a href="#" class="icon-lock">Snapchat</a>
+			</nav>
+		</div><!-- /perspective -->
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
 </html>
