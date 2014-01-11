@@ -172,12 +172,12 @@ button {
 
 button {
 	font-size: 75%;
-	background: #ed8151;
+	background: #eed4b1;
 }
 
 button:hover,
 button:active {
-	background: #e86a32;
+	background: #c24157;
 }
 
 .related {
