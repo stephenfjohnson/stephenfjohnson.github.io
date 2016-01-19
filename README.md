@@ -1,16 +1,48 @@
-Perspective Page View Navigation
-=========
+# Foundation for Sites Template
 
-Some effects for a perspective page view navigation where the page itself gets pushed away in 3D to reveal a menu or other items.
+**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
 
-[Article on Codrops](http://tympanus.net/codrops/?p=17915)
+This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
 
-[Demo](http://tympanus.net/Development/PerspectivePageViewNavigation/)
+## Installation
 
-Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is".
+To use this template, your computer needs:
 
-Read more here: [License](http://tympanus.net/codrops/licensing/)
+- [NodeJS](https://nodejs.org/en/) (0.10 or greater)
+- [Git](https://git-scm.com/)
 
-Icons used in this demo are from the [Typicons set by Stephen Hutchings](http://typicons.com/) and they are licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
+This template can be installed with the Foundation CLI, or downloaded and set up manually.
 
-[© Codrops 2013](http://www.codrops.com)
+### Using the CLI
+
+Install the Foundation CLI with this command:
+
+```bash
+npm install foundation-cli --global
+```
+
+Use this command to set up a blank Foundation for Sites project with this template:
+
+```bash
+foundation new --framework sites --template basic
+```
+
+The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
+
+### Manual Setup
+
+To manually set up the template, first download it with Git:
+
+```bash
+git clone https://github.com/zurb/foundation-sites-template projectname
+```
+
+Then open the folder in your command line, and install the needed dependencies:
+
+```bash
+cd projectname
+npm install
+bower install
+```
+
+Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.

@@ -1,0 +1,129 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+body {
+  background: url(/images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // -webkit-transform-style: preserve-3d;
+  // -moz-transform-style: preserve-3d;
+  // transform-style: preserve-3d;
+  padding: 6rem;
+  // display: none;
+  @include breakpoint(medium only) {
+    padding: 3rem;
+  }
+  @include breakpoint(small only) {
+    padding: 1rem;
+  }
+}
+
+
+section {
+  background-image: -webkit-linear-gradient(left, #EC6F66 0%, #F3A183 100%);
+  background-image: -o-linear-gradient(left, #EC6F66 0%, #F3A183 100%);
+  background-image: linear-gradient(to right, #EC6F66 0%, #F3A183 100%);
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  // top: 50%;
+  // transform: translateY(-50%);
+  height: 100%;
+  width: 100%;
+  // margin: 6rem;
+  // display: none;
+}
+
+.wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+h1 {
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  font-size: 5.4rem;
+  @include breakpoint(medium only) {
+    font-size: 3rem;
+  }
+  @include breakpoint(small only) {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  text-align: center;
+  color: $white;
+}
+
+.icon-row {
+  .columns {
+    text-align: center;
+    .icon {
+      @include transition(color .3s, border-color .3s);
+      font-size: 4rem;
+      color: $white;
+      &:hover {
+        color: lighten($black, 10%);
+      }
+    }
+  }
+}

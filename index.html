@@ -1,71 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Stephen Johnson</title>
-		<meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
-		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
-		<script src="js/modernizr.custom.25376.js"></script>
-	</head>
-	<body>
-		<div id="perspective" class="perspective effect-movedown">
-			<div class="container">
-				<div class="wrapper"><!-- wrapper needed for scroll -->
-					<!-- Top Navigation -->
-					
-					<header class="codrops-header">
-						<h1>Stephen F Johnson <span>Web Developer at My Custom Event</span></h1>	
-					</header>
-					<div class="main clearfix">
-						<div class="column">
-							<p>I work at My Custom Event building quality custom websites.</p>
-                            <p><button id="showMenu">Find Me Around The Web</button></p>
-						</div>
-						<div class="column">
-							<img src="img/profile-small.png" alt="profile">
-						</div>
-					</div><!-- /main -->
-				</div><!-- wrapper -->
-			</div><!-- /container -->
-			<nav class="outer-nav top horizontal">
-				<a href="http://stephenfjohnson.me/" class="icon-news">Blog</a>
-				<a href="https://www.facebook.com/stephenfjohnson.me" class="icon-news">Facebook</a>
-				<a href="http://instagram.com/stephenfjohnson" class="icon-image">Instagram</a>
-				<a href="#" class="icon-upload">Reddit</a>
-				<a href="#" class="icon-mail">Email</a>
-				<a href="#" class="icon-mail">Youtube</a>
-				<a href="#" class="icon-lock">Snapchat</a>
-			</nav>
-		</div><!-- /perspective -->
-		<script src="js/classie.js"></script>
-		<script src="js/menu.js"></script>
-		
-        <script type="text/javascript">
-        
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-30351638-1']);
-            _gaq.push(['_setDomainName', 'stephenfjohnson.github.io']);
-            _gaq.push(['_setAllowLinker', true]);
-            _gaq.push(['_trackPageview']);
-            
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript';
-              ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
-              'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(ga, s);
-            })();
-        
-        </script>
-	
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Johnson</title>
+    <link href="https://file.myfontastic.com/imM392osA8XPD5ZF8DLqaf/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <div class="row">
+          <div class="large-12 columns">
+            <h1>Stephen Johnson</h1>
+            <h3>Creative Director, Co-Founder, Entrepreneur and Skier</h3>
+          </div>
+        </div>
+        <div class="row icon-row">
+          <div class="medium-2 small-4 large-expand columns"><a href="https://www.facebook.com/stephenfjohnson.me" class="icon icon-facebook"></a></div>
+          <div class="medium-2 small-4 large-expand columns"><a href="https://twitter.com/StephenFJohnson" class="icon icon-twitter"></a></div>
+          <div class="medium-2 small-4 large-expand columns"><a href="https://medium.com/@stephenfjohnson" class="icon icon-medium"></a></div>
+          <div class="medium-2 small-4 large-expand columns"><a href="https://www.instagram.com/stephenfjohnson/" class="icon icon-instagram"></a></div>
+          <div class="medium-2 small-4 large-expand columns"><a href="https://github.com/stephenfjohnson" class="icon icon-github"></a></div>
+          <div class="medium-2 small-4 large-expand columns"><a href="https://codepen.io/stephenfjohnson/" class="icon icon-codepen"></a></div>
+        </div>
+      </div>
+    </section>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+    <script src="js/min/app-min.js"></script>
+  </body>
 </html>
